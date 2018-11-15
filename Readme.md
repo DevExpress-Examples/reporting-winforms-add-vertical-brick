@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/T457705/Form1.cs) (VB: [Form1.vb](./VB/T457705/Form1.vb))
+* [Program.cs](./CS/T457705/Program.cs) (VB: [Program.vb](./VB/T457705/Program.vb))
+* [XtraReport1.cs](./CS/T457705/XtraReport1.cs) (VB: [XtraReport1.vb](./VB/T457705/XtraReport1.vb))
+<!-- default file list end -->
 # How to add a brick with vertical text to the margin of each report page
 
 
