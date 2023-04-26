@@ -149,7 +149,7 @@
 			' 
 			Me.xrTable1.Borders = (CType((((DevExpress.XtraPrinting.BorderSide.Left Or DevExpress.XtraPrinting.BorderSide.Top) Or DevExpress.XtraPrinting.BorderSide.Right) Or DevExpress.XtraPrinting.BorderSide.Bottom), DevExpress.XtraPrinting.BorderSide))
 			Me.xrTable1.Dpi = 100F
-			Me.xrTable1.Font = New System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold)
+			Me.xrTable1.Font = New DevExpress.Drawing.DXFont("Times New Roman", 12F, DevExpress.Drawing.DXFontStyle.Bold)
 			Me.xrTable1.LocationFloat = New DevExpress.Utils.PointFloat(0F, 0F)
 			Me.xrTable1.Name = "xrTable1"
 			Me.xrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() { Me.xrTableRow1})

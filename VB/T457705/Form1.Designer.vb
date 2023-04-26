@@ -25,21 +25,20 @@
 		Private Sub InitializeComponent()
 			Me.simpleButton1 = New DevExpress.XtraEditors.SimpleButton()
 			Me.SuspendLayout()
-			' 
-			' simpleButton1
-			' 
-			Me.simpleButton1.Location = New System.Drawing.Point(250, 123)
+			'
+			'simpleButton1
+			'
+			Me.simpleButton1.Location = New System.Drawing.Point(128, 69)
 			Me.simpleButton1.Name = "simpleButton1"
 			Me.simpleButton1.Size = New System.Drawing.Size(148, 23)
 			Me.simpleButton1.TabIndex = 0
 			Me.simpleButton1.Text = "Show report"
-'			Me.simpleButton1.Click += New System.EventHandler(Me.simpleButton1_Click)
-			' 
-			' Form1
-			' 
-			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
+			'
+			'Form1
+			'
+			Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
 			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-			Me.ClientSize = New System.Drawing.Size(632, 278)
+			Me.ClientSize = New System.Drawing.Size(404, 160)
 			Me.Controls.Add(Me.simpleButton1)
 			Me.Name = "Form1"
 			Me.Text = "Form1"
@@ -47,7 +46,7 @@
 
 		End Sub
 
-		#End Region
+#End Region
 
 		Private WithEvents simpleButton1 As DevExpress.XtraEditors.SimpleButton
 
