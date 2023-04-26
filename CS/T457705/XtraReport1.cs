@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using DevExpress.XtraPrinting;
+using DevExpress.Drawing;
 
 namespace T457705 {
     public partial class XtraReport1 : DevExpress.XtraReports.UI.XtraReport {
@@ -10,7 +11,7 @@ namespace T457705 {
 
         private void XtraReport1_AfterPrint(object sender, EventArgs e) {
             string text = "Developer Express Inc.";
-            Font font = new Font("Arial", 20f);
+            DXFont font = new DXFont("Arial", 20f);
             SizeF size = this.PrintingSystem.Graph.MeasureString(text, font);
             size.Height = size.Height + 100;
             size.Width = size.Width + 50;
@@ -20,7 +21,7 @@ namespace T457705 {
             }
         }
 
-        LabelBrick CreateLabel(Page page, Font font, SizeF size, string text) {
+        LabelBrick CreateLabel(Page page, DXFont font, SizeF size, string text) {
             LabelBrick labelBrick = new LabelBrick() { 
                 Angle = 90, 
                 Font = font, 

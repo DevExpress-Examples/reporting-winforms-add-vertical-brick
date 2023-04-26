@@ -1,5 +1,6 @@
 ﻿Imports DevExpress.Utils
 Imports DevExpress.XtraPrinting
+Imports Devexpress.Drawing
 Namespace T457705
     Partial Public Class XtraReport1
         Inherits DevExpress.XtraReports.UI.XtraReport
@@ -9,7 +10,7 @@ Namespace T457705
 
         Private Sub XtraReport1_AfterPrint(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.AfterPrint
             Dim brickText As String = "Developer Express Inc."
-            Dim brickFont As New Font("Arial", 20.0F, FontStyle.Bold)
+            Dim brickFont As New DXFont("Arial", 20.0F)
             Dim brickSize As SizeF = Me.PrintingSystem.Graph.MeasureString(brickText, brickFont)
             brickSize.Height = brickSize.Height + 100
             brickSize.Width = brickSize.Width + 50
@@ -18,7 +19,7 @@ Namespace T457705
                 page.InnerBricks.Add(labelBrick)
             Next page
         End Sub
-        Private Function CreateLabel(ByVal page As Page, ByVal font As Font, ByVal size As SizeF, ByVal text As String) As LabelBrick
+        Private Function CreateLabel(ByVal page As Page, ByVal font As DXFont, ByVal size As SizeF, ByVal text As String) As LabelBrick
             Dim labelBrick As New LabelBrick() With {
                 .Angle = 90,
                 .Font = font,
